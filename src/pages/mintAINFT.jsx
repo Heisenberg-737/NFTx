@@ -80,7 +80,14 @@ function MintFromAI() {
       window.alert("Please generate an image first.");
       return;
     }
-    console.log(image);
+
+    navigate("/nftdetails", {
+      state: {
+        wallet: location.state.wallet,
+        url: "",
+        img: image,
+      },
+    });
   };
 
   return (

@@ -2,33 +2,46 @@ import React from "react";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-// import { NFTStorage, File } from "nft.storage";
+import { NFTStorage, File } from "nft.storage";
 import NavBar from "../component/navBar/navbar";
-import "./mintURLNFT.css";
 
-// const API_KEY = process.env.NFT_STORAGE_KEY;
-
-function MintFromURL() {
-//   const client = new NFTStorage({ token: API_KEY });
+function NFTDetails() {
   const location = useLocation();
   const navigate = useNavigate();
   const [walletAddress, setWalletAddress] = useState(location.state.wallet);
-  const [url, setURL] = useState("");
+  const [url, setURL] = useState(location.state.url);
+  const [img, setImg] = useState(location.state.img);
+  const [name, setName] = useState("");
+  const [description, setDescription] = useState("");
+  const [chain, setChain] = useState("");
 
-  function handleChange(event) {
-    setURL(event.target.value);
+  function handleChangeName(event) {
+    setName(event.target.value);
   }
 
-  async function submitImgURL() {
-    console.log(url);
+  function handleChangeDescription(event) {
+    setDescription(event.target.value);
+  }
 
-    navigate("/nftdetails", {
-        state: {
-            wallet: location.state.wallet,
-            url: url,
-            img: "",
-        },
-    });
+  function handleChangeChain(event) {
+    setChain(event.target.value);
+  }
+
+  async function submitNFT() {
+    if (name === "" || name === null) {
+      window.alert("Please provide a name for the NFT.");
+      return;
+    }
+
+    if (description === "" || description === null) {
+      window.alert("Please provide a description for the NFT.");
+      return;
+    }
+
+    if (chain === "" || chain === null) {
+      window.alert("Please provide a chain for the NFT.");
+      return;
+    }
 
     // const metadata = await client.store({
     //   name: "ExampleNFT",
@@ -38,7 +51,6 @@ function MintFromURL() {
     // console.log("Metadata stored on Filecoin and IPFS with URL:", metadata.url);
   }
 
-  
   return (
     <div>
       <NavBar wallet={walletAddress} />
@@ -46,17 +58,6 @@ function MintFromURL() {
       <h3 className="HeadingText">
         Enter the URL of the image you want to mint as an NFT.
       </h3>
-      <div className="urlInput">
-        <input
-          onChange={handleChange}
-          type="text"
-          placeholder="Enter URL here"
-          value={url}
-        />
-        <button onClick={submitImgURL}>Submit Image</button>
-      </div>
     </div>
   );
 }
-
-export default MintFromURL;
