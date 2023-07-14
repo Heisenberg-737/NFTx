@@ -2,9 +2,11 @@ import React from "react";
 import { useState } from "react";
 import { ethers } from "ethers";
 import "./wallet.css";
+import { useNavigate } from "react-router-dom";
 
 function Wallet() {
   const [walletAddress, setWalletAddress] = useState("");
+  const navigate = useNavigate();
 
   async function requestAccount() {
     console.log("Requesting account...");
@@ -18,6 +20,11 @@ function Wallet() {
           method: "eth_requestAccounts",
         });
         setWalletAddress(accounts[0]);
+        navigate("/option", {
+          state: {
+            wallet: accounts[0],
+          },
+        });
       } catch (error) {
         console.log("Error connecting...");
       }
@@ -26,19 +33,19 @@ function Wallet() {
     }
   }
 
-  // // Create a provider to interact with a smart contract
-  // async function connectWallet() {
-  //   if (typeof window.ethereum !== "undefined") {
-  //     await requestAccount();
+  //   // Create a provider to interact with a smart contract
+  //   async function connectWallet() {
+  //     if (typeof window.ethereum !== "undefined") {
+  //       await requestAccount();
 
-  //     const provider = new ethers.providers.Web3Provider(window.ethereum);
+  //       const provider = new ethers.providers.Web3Provider(window.ethereum);
+  //     }
   //   }
-  // }
 
   return (
     <div>
       <button onClick={requestAccount}>Connect Wallet</button>
-      <p>{walletAddress}</p>
+      {/* <p>{walletAddress}</p> */}
     </div>
   );
 }
