@@ -1,0 +1,14 @@
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navBarText {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}

@@ -27,3 +27,14 @@ Button {
     color: white;
     font-weight: bold;
 }
+
+.urlInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px
+}
+
+input {
+    width: 40%;
+}
