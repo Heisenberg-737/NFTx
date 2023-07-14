@@ -1,0 +1,46 @@
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navBarText {
+    /* flex: 1; */
+    /* width: 50%; */
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.Heading {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+
+.HeadingText {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.optionButton {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+Button {
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 8px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
