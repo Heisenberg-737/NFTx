@@ -1,9 +1,12 @@
-button {
-    font-size: 12px;
-    padding: 4px;
-    border-radius: 8px;
-    background-color: red;
-    color: white;
-    font-weight: bold;
-  }
-  
+.connectButton {
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 8px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+}
+
+.walletButton {
+  text-align: center;
+}

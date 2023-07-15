@@ -43,8 +43,8 @@ function Wallet() {
   //   }
 
   return (
-    <div>
-      <button onClick={requestAccount}>Connect Wallet</button>
+    <div className="walletButton">
+      <button className="connectButton" onClick={requestAccount}>Connect Wallet</button>
       {/* <p>{walletAddress}</p> */}
     </div>
   );
