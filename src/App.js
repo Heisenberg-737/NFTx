@@ -5,6 +5,7 @@ import MintOptions from "./pages/mintOptions.jsx";
 import MintFromURL from "./pages/mintURLNFT";
 import MintFromAI from "./pages/mintAINFT";
 import NFTDetails from "./pages/nftDetails";
+import Success from "./pages/success";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/urlnft" element={<MintFromURL />} />
         <Route path="/ainft" element={<MintFromAI />} />
         <Route path="/nftdetails" element={<NFTDetails />} />
+        <Route path="/success" element={<Success />} />
       </Routes>
     </Router>
   );

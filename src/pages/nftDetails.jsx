@@ -7,6 +7,7 @@ import NavBar from "../component/navBar/navbar";
 import "./nftDetails.css";
 
 const API_KEY = process.env.REACT_APP_NFT_STORAGE_KEY;
+const VERBWIRE_API_KEY = process.env.REACT_APP_VERBWIRE_API_KEY;
 
 function NFTDetails() {
   const location = useLocation();
@@ -17,6 +18,7 @@ function NFTDetails() {
   const [description, setDescription] = useState("");
   const [chain, setChain] = useState("");
   const [metadataURL, setMetadataURL] = useState("");
+  const [nftData, setNFTData] = useState(null);
   const client = new NFTStorage({ token: API_KEY });
 
   function handleChangeName(event) {
@@ -43,11 +45,40 @@ function NFTDetails() {
             (blobFile) => new File([blobFile], name, { type: "image/png" })
           ),
       });
-      console.log(
-        "Metadata stored on Filecoin and IPFS with URL:",
-        metadata.url
-      );
       setMetadataURL(metadata.url);
+    }
+  }
+
+  async function mintNFT() {
+    console.log("Minting NFT...");
+    console.log(metadataURL);
+
+    // Data for Verbwire API
+    const form = new FormData();
+    form.append("allowPlatformToOperateToken", "true");
+    form.append("recipientAddress", walletAddress);
+    form.append("chain", chain);
+    form.append("metadataUrl", metadataURL);
+
+    // Config for Verbwire API
+    const options = {
+      method: "POST",
+      headers: {
+        accept: "application/json",
+        "X-API-Key": VERBWIRE_API_KEY,
+      },
+      body: form,
+    };
+
+    try {
+      const response = await fetch(
+        "https://api.verbwire.com/v1/nft/mint/quickMintFromMetadataUrl",
+        options
+      )
+        .then((response) => response.json())
+        .then((response) => setNFTData(response));
+    } catch (e) {
+      console.log(e);
     }
   }
 
@@ -68,6 +99,12 @@ function NFTDetails() {
     }
 
     await generateMetadata();
+    console.log(metadataURL);
+    await mintNFT();
+    console.log(nftData);
+
+
+
   }
 
   return (
@@ -100,13 +137,22 @@ function NFTDetails() {
         <div className="chainInput">
           <h5>You want to mint your NFT on</h5>
           <select onChange={handleChangeChain} value={chain}>
-            <option value="Ethereum">Ethereum</option>
-            <option value="Polygon">Polygon</option>
-            <option value="Binance Smart Chain">Binance Smart Chain</option>
-            <option value="Solana">Solana</option>
-            <option value="Avalanche">Avalanche</option>
-            <option value="Fantom">Fantom</option>
-            <option value="Harmony">Harmony</option>
+            <option value="goerli">Goerli Ethereum</option>
+            <option value="mumbai">Polygon Mumbai</option>
+            <option value="solana-testnet">Solana Testnet</option>
+            <option value="bsc-testnet">Bsc Testnet</option>
+            <option value="fuji">Fuji</option>
+            <option value="arbitrum-goerli">Abritrum Goerli</option>
+            <option value="optimism-goerli">Optimism Goerli</option>
+            <option value="fantom-testnet">Fantom Testnet</option>
+            <option value="ethereum">Ethereum</option>
+            <option value="polygon">Polygon</option>
+            <option value="solana">Solana</option>
+            <option value="bsc">Binance Smart Chain (Bsc)</option>
+            <option value="avalanche">Avalanche</option>
+            <option value="arbitrum">Arbitrum</option>
+            <option value="optimism">Optimism</option>
+            <option value="fantom">Fantom</option>
           </select>
         </div>
         <button className="submitNFT" onClick={submitNFT}>
