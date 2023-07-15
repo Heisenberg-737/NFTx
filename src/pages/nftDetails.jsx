@@ -17,7 +17,7 @@ function NFTDetails() {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [chain, setChain] = useState("");
-  const [metadataURL, setMetadataURL] = useState("");
+  const [metadataURL, setMetadataURL] = useState(null);
   const [nftData, setNFTData] = useState(null);
   const client = new NFTStorage({ token: API_KEY });
 
@@ -33,26 +33,9 @@ function NFTDetails() {
     setChain(event.target.value);
   }
 
-  async function generateMetadata() {
-    console.log("Generating metadata...");
-    if (img !== null) {
-      const metadata = await client.store({
-        name: name,
-        description: description,
-        image: await fetch(img)
-          .then((r) => r.blob())
-          .then(
-            (blobFile) => new File([blobFile], name, { type: "image/png" })
-          ),
-      });
-      setMetadataURL(metadata.url);
-    }
-  }
-
   async function mintNFT() {
     console.log("Minting NFT...");
-    console.log(metadataURL);
-
+    console.log("Metadata URL:", metadataURL);
     // Data for Verbwire API
     const form = new FormData();
     form.append("allowPlatformToOperateToken", "true");
@@ -71,14 +54,43 @@ function NFTDetails() {
     };
 
     try {
-      const response = await fetch(
+      await fetch(
         "https://api.verbwire.com/v1/nft/mint/quickMintFromMetadataUrl",
         options
       )
         .then((response) => response.json())
-        .then((response) => setNFTData(response));
+        .then((response) => {
+          setNFTData(response.quick_mint);
+        });
+        console.log("NFT Data:", nftData);
+          navigate("/success", {
+            state: {
+              wallet: walletAddress,
+              nftDetail: nftData,
+              metadataURL: metadataURL,
+              chain: chain,
+            },
+          });
     } catch (e) {
       console.log(e);
+    }
+  }
+
+  async function generateMetadata() {
+    console.log("Generating metadata...");
+    if (img !== null) {
+      const metadata = await client.store({
+        name: name,
+        description: description,
+        image: await fetch(img)
+          .then((r) => r.blob())
+          .then(
+            (blobFile) => new File([blobFile], name, { type: "image/png" })
+          ),
+      });
+      setMetadataURL(metadata.url);
+      console.log("Metadata URL:", metadataURL);
+      await mintNFT();
     }
   }
 
@@ -99,12 +111,6 @@ function NFTDetails() {
     }
 
     await generateMetadata();
-    console.log(metadataURL);
-    await mintNFT();
-    console.log(nftData);
-
-
-
   }
 
   return (

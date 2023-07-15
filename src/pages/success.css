@@ -1,0 +1,34 @@
+.Heading {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+
+.HeadingText {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 80%;
+    /* margin-top: 1%; */
+    margin: 5% 25%;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+a {
+    font-size: 16px;
+    font-weight: 800;
+    color: #faa32a;
+}
