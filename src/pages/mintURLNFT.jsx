@@ -25,17 +25,9 @@ function MintFromURL() {
     navigate("/nftdetails", {
         state: {
             wallet: location.state.wallet,
-            url: url,
-            img: "",
+            img: url,
         },
     });
-
-    // const metadata = await client.store({
-    //   name: "ExampleNFT",
-    //   description: "My ExampleNFT is an awesome artwork!",
-    //   image: await fetch(url).then(r => r.blob()).then(blobFile => new File([blobFile], "example.png", { type: "image/png" })),
-    // });
-    // console.log("Metadata stored on Filecoin and IPFS with URL:", metadata.url);
   }
 
   

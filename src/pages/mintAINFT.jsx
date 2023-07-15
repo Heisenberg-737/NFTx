@@ -35,7 +35,7 @@ function MintFromAI() {
 
     // Call AI API to generate a image based on description
     const imageData = await createImage();
-    console.log(imageData);
+    // console.log(imageData);
 
     setIsWaiting(false);
     setMessage("");
@@ -63,7 +63,7 @@ function MintFromAI() {
       responseType: "arraybuffer",
     });
 
-    console.log(response);
+    // console.log(response);
 
     const type = response.headers["content-type"];
     const data = response.data;
@@ -84,7 +84,6 @@ function MintFromAI() {
     navigate("/nftdetails", {
       state: {
         wallet: location.state.wallet,
-        url: "",
         img: image,
       },
     });
