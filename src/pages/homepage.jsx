@@ -7,7 +7,7 @@ function Homepage() {
   return (
     <div className="HomePage">
       <h1 className="Heading">Welcome to NFTx.</h1>
-      <h2 className="TitleText">Empowering Creativity Across 16 Chains with AI-Generated NFTs ⚡️</h2>
+      <h2 className="TitleText">Minting Creativity Across 16 Chains with AI-Generated NFTs ⚡️</h2>
       <img className="HomePageImage" src={nftHomepageImg} alt="NFTx" />
       <h3 className="HeadingText">Connect your wallet to get started.</h3>
       <Wallet />

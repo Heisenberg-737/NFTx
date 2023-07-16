@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+#NFTx 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Create and Mint NFTx across 16 different chains with the power of Generative-AI
 
-## Available Scripts
+## 🤔Problem Statement
 
-In the project directory, you can run:
+- According to Outlook India, 44% of Indians don’t understand how cryptos/NFTs work.
+- A global survey by US-based blockchain technology firm ConsenSys and the UK-headquartered market research firm YouGov has revealed that 17% of Indians believe cryptos/NFTs to be speculative assets and 20% believe them to be scams.
+- Most people surveyed find it difficult to invest in NFTs because of the complexity of the process.
 
-### `npm start`
+## 🚀Our Solution
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+NFTx is an easy and smooth NFT minting platform, which requires a minimal understanding of the blockchain ecosystem. It allows you to mint any NFT over any of the 16 chains we offer. It allows you to use the power of Generative-AI to create your unique NFTs.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🥽Functioning and Workflow
 
-### `npm test`
+- NFTx is an AI-driven NFT minting platform (allowing minting on 16 different chains) that simplifies the process of minting NFTs (Non-Fungible Tokens) and storing them on IPFS.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ⚽Goal
 
-### `npm run build`
+The primary objective is to remove the obstacles that have historically impeded the growth and acceptance of cryptocurrencies. By doing so, the aim is to enhance accessibility for a broader audience while ensuring privacy and security measures are in place.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🔔Inspiration
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The NFTx team shares a collective passion for blockchain technology and recognizes its potential to revolutionize the finance industry. Their main goal is to simplify the process of interacting with cryptocurrencies, ensuring that it is accessible to individuals from various backgrounds and industries.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🤨Why NFTx?
 
-### `npm run eject`
+In the current landscape of a rapidly expanding crypto industry and the continuous development of the Web3 ecosystem, there is a pressing need to simplify crucial transactions. This is crucial in order to foster increased user engagement and participation.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+_It is important to strike a balance between public perception and understanding of Web3 technology, as well as the intricacies involved in actual processes and trades within the crypto market._
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+By leveraging AI technology, an NFT Minting platform has the potential to streamline complex trading tasks into simple, efficient actions that can be performed with just a few clicks. Such a platform could attract more users and contribute to overall growth in both user base and financial value within this space.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🌨\***\*Challenges\*\***
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Writing Solidity smart contracts for Polygon Mumbai was really a heft task, and took a major chunk of our effort.
+- Learning and understanding Typescript to incorporate Solana to our project.
+-
 
-## Learn More
+## ✨Project Outcome and Learning
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Throughout their journey, the team has acquired an in-depth understanding of blockchain technology and has developed proficiency in utilizing a wide range of blockchain services.
+- The team gained a deeper understanding and skill in writing smart contracts with respect to the process of publishing NFTs.
+- In addition to their expertise in blockchain technology, the team also acquired valuable skills in AI technology. This includes integrating Stable Diffusion into its platform, further enhancing its functionality and capabilities.
+- Furthermore, the project provided an opportunity for the team to cultivate essential soft skills such as effective communication, collaboration, and project management. These skills are vital for successful teamwork and ensuring smooth progress throughout the development process.
+- Working on NFTx enabled the team to develop effective time management skills and operate efficiently within tight deadlines. This experience honed their ability to prioritize tasks, allocate resources effectively, and meet project milestones in a timely manner.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🏆Why do we Deserve to Win?
 
-### Code Splitting
+-
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🌟**What's next in store for NFTx?**
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- The primary objective of NFTx is to enhance the accessibility of cryptocurrency and blockchain technology. The platform achieves this by incorporating user-friendly features, tutorials, and comprehensive information. By providing these resources, NFTx aims to become the preferred platform for individuals from all backgrounds, regardless of their technical expertise or knowledge in the field.
+- The team at NFTx is actively engaged in integrating additional APIs and blockchain platforms to enhance the versatility of the platform. By expanding its compatibility with various APIs and blockchain networks, NFTx aims to provide users with a broader range of options and functionalities, further enriching their experience within the platform.
+- By simplifying the interaction process with complex systems, NFTx ensures accessibility for individuals of all technical backgrounds and experience levels. This inclusive approach plays a crucial role in driving the widespread adoption of cryptocurrencies and blockchain technology. By removing barriers and making these technologies more user-friendly, NFTx aims to encourage broader participation and engagement in this transformative space.
