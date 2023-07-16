@@ -44,7 +44,8 @@ By leveraging AI technology, an NFT Minting platform has the potential to stream
 
 - Writing Solidity smart contracts for Polygon Mumbai was really a heft task, and took a major chunk of our effort.
 - Learning and understanding Typescript to incorporate Solana into our project.
--
+- Using Stable Diffusion's API from Hugging Face and integrating it.
+- Generating the Metadata & handling the simultaneous API call to Filecoin & then to Verbwire has a tedious task.
 
 ## ✨Project Outcome and Learning
 
