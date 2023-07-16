@@ -58,7 +58,7 @@ By leveraging AI technology, an NFT Minting platform has the potential to stream
 - {Best use of Polygon}: We have used Polygon + Ethereum to mint our AI-generated NFTs on the Polygon Mumbai network.
 - {Best use of Solana}: We have used Solana to mint our AI-generated NFTs on the Solana Devnet.
 - {Best use of Filecoin}: We have used Filecoin to store the metadata of our NFTs.
-- {Best use of Replit}: We have used Replit to host our project. Our project is live at [https://replit.com/@Heisenberg-737/NFTx](replit.com/@Heisenberg-737/NFTx)
+- {Best use of Replit}: We have used Replit to host our project. Our project is live at [replit.com/@Heisenberg-737/NFTx](https://replit.com/@Heisenberg-737/NFTx)
 - {Best use of Verbwire}: We have used Verbwire's cutting edge APIs to mint our AI generated NFTs on 14 chains.
 
 ## 🌟**What's next in store for NFTx?**
