@@ -1,6 +1,8 @@
-#NFTx 🚀
+# NFTx 🚀
 
-Create and Mint NFTx across 16 different chains with the power of Generative-AI
+Create and Mint NFTx across 16 different chains with the power of Generative-AI!
+
+![Screenshot 2023-07-16 at 8 38 20 PM](https://github.com/Heisenberg-737/NFTx/assets/55024919/7a4138f8-e5d6-49ff-b9ae-ced2b0d25fdd)
 
 ## 🤔Problem Statement
 
@@ -8,7 +10,7 @@ Create and Mint NFTx across 16 different chains with the power of Generative-AI
 - A global survey by US-based blockchain technology firm ConsenSys and the UK-headquartered market research firm YouGov has revealed that 17% of Indians believe cryptos/NFTs to be speculative assets and 20% believe them to be scams.
 - Most people surveyed find it difficult to invest in NFTs because of the complexity of the process.
 
-## 🚀Our Solution
+## 🛠️Our Solution
 
 NFTx is an easy and smooth NFT minting platform, which requires a minimal understanding of the blockchain ecosystem. It allows you to mint any NFT over any of the 16 chains we offer. It allows you to use the power of Generative-AI to create your unique NFTs.
 
@@ -35,7 +37,7 @@ By leveraging AI technology, an NFT Minting platform has the potential to stream
 ## 🌨\***\*Challenges\*\***
 
 - Writing Solidity smart contracts for Polygon Mumbai was really a heft task, and took a major chunk of our effort.
-- Learning and understanding Typescript to incorporate Solana to our project.
+- Learning and understanding Typescript to incorporate Solana into our project.
 -
 
 ## ✨Project Outcome and Learning
