@@ -20,7 +20,7 @@ function Success() {
       <h1 className="Heading">Your NFT Has Been Minted Successfully! 🎉</h1>
       <h3 className="HeadingText">
         {" "}
-        Details of your Minted NFT are as follows on:
+        Details of your Minted NFT are as follows:
       </h3>
       <div className="details">
         <h5>Chain: {chain}</h5>
