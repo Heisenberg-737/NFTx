@@ -16,7 +16,13 @@ NFTx is an easy and smooth NFT minting platform, which requires a minimal unders
 
 ## 🥽Functioning and Workflow
 
-- NFTx is an AI-driven NFT minting platform (allowing minting on 16 different chains) that simplifies the process of minting NFTs (Non-Fungible Tokens) and storing them on IPFS.
+- NFTx is an AI-driven NFT minting platform (allowing minting on 16 different chains) that simplifies the process of minting NFTs (Non-Fungible Tokens).
+- The platform is designed to be user-friendly and accessible to individuals from all backgrounds, regardless of their technical expertise or knowledge in the field.
+- The platform is powered by Stable Diffusion, an AI technology that generates unique NFTs based on user preferences.
+- Users can select from a wide range of options to customize their NFTs, including the type of NFT, the details of NFTs to be minted, and the blockchain network to be used.
+- The platform also provides users with the option to mint NFTs from their own images. Users can upload their images to be minted.
+- The platform uses cutting edge NFTStorage by Filecoin for generating Metadata for the NFTs.
+
 
 ## ⚽Goal
 
@@ -49,8 +55,11 @@ By leveraging AI technology, an NFT Minting platform has the potential to stream
 - Working on NFTx enabled the team to develop effective time management skills and operate efficiently within tight deadlines. This experience honed their ability to prioritize tasks, allocate resources effectively, and meet project milestones in a timely manner.
 
 ## 🏆Why do we Deserve to Win?
-
--
+- {Best use of Polygon}: We have used Polygon + Ethereum to mint our AI-generated NFTs on the Polygon Mumbai network.
+- {Best use of Solana}: We have used Solana to mint our AI-generated NFTs on the Solana Devnet.
+- {Best use of Filecoin}: We have used Filecoin to store the metadata of our NFTs.
+- {Best use of Replit}: We have used Replit to host our project. Our project is live at [https://replit.com/@Heisenberg-737/NFTx](replit.com/@Heisenberg-737/NFTx)
+- {Best use of Verbwire}: We have used Verbwire's cutting edge APIs to mint our AI generated NFTs on 14 chains.
 
 ## 🌟**What's next in store for NFTx?**
 
