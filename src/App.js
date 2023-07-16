@@ -6,6 +6,7 @@ import MintFromURL from "./pages/mintURLNFT";
 import MintFromAI from "./pages/mintAINFT";
 import NFTDetails from "./pages/nftDetails";
 import Success from "./pages/success";
+import SuccessPolygon from "./pages/successPolygon";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/ainft" element={<MintFromAI />} />
         <Route path="/nftdetails" element={<NFTDetails />} />
         <Route path="/success" element={<Success />} />
+        <Route path="/successpolygon" element={<SuccessPolygon />} />
       </Routes>
     </Router>
   );

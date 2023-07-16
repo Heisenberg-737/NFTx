@@ -5,13 +5,12 @@ import { useNavigate } from "react-router-dom";
 import NavBar from "../component/navBar/navbar";
 import "./success.css";
 
-function Success() {
+function SuccessPolygon() {
   const location = useLocation();
   const navigate = useNavigate();
   const [walletAddress, setWalletAddress] = useState(location.state.wallet);
   const [nftData, setNFTData] = useState(location.state.nftDetail);
   const [metadataURL, setMetadataURL] = useState(location.state.metadataURL);
-  const [chain, setChain] = useState(location.state.chain);
   const [openseas, setOpenseas] = useState(
     `https://testnets.opensea.io/${walletAddress}`
   );
@@ -24,12 +23,12 @@ function Success() {
         Details of your Minted NFT are as follows:
       </h3>
       <div className="details">
-        <h5>Chain: {chain}</h5>
+        <h5>Chain: Polygon Mumbai</h5>
         <h5>Transaction Hash: {nftData.transactionHash}</h5>
-        <h5>Transaction ID: {nftData.transactionID}</h5>
+        <h5>Block Number: {nftData.blockNum}</h5>
         <h5>
           Block Explorer:{" "}
-          <a href={nftData.blockExplorer}>{nftData.blockExplorer}</a>
+          <a href={nftData.polygonScanLink}>{nftData.polygonScanLink}</a>
         </h5>
         <h5>
           View Your NFT Metadata uploaded using NFTStorage by Filecoin:{" "}
@@ -43,4 +42,4 @@ function Success() {
   );
 }
 
-export default Success;
+export default SuccessPolygon;

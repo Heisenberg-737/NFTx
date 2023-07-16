@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { NFTStorage, File } from "nft.storage";
 import NavBar from "../component/navBar/navbar";
 import "./nftDetails.css";
+import mintNFTPolygon from "../polygon/mint";
 
 const API_KEY = process.env.REACT_APP_NFT_STORAGE_KEY;
 const VERBWIRE_API_KEY = process.env.REACT_APP_VERBWIRE_API_KEY;
@@ -123,9 +124,23 @@ function NFTDetails() {
     // await onHoldNFT();
     // // setNFTData("");
     // // const resultNFT = await mintNFT();
-    await mintNFT();
-    console.log("NFT Data:", nftData);
-    // console.log("NFT Data-->:", nftData);
+
+    if (chain === "mumbai") {
+      const nftPolygonData = await mintNFTPolygon(walletAddress, metadataURL);
+      console.log("NFT Data of Polygon:", nftPolygonData);
+
+      navigate("/successpolygon", {
+        state: {
+          wallet: walletAddress,
+          nftDetail: nftPolygonData,
+          metadataURL: metadataURL,
+        },
+      });
+    } else {
+      await mintNFT();
+      console.log("NFT Data:", nftData);
+      // console.log("NFT Data-->:", nftData);
+    }
   }
 
   return (
