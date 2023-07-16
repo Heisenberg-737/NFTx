@@ -11,7 +11,7 @@ function NavBar(props) {
   return (
     <div className="navBar">
       <div onClick={toHomepage} className="navBarText">
-        NFTx
+        NFTx.
       </div>
       <div className="navBarText">Hello {props.wallet}!</div>
     </div>

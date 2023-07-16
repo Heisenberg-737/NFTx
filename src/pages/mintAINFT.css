@@ -1,3 +1,12 @@
+.mintAIPage {
+    background-color: #fffead;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .Heading {
     font-size: 36px;
     text-align: center;
@@ -20,14 +29,14 @@
     margin-top: 1%;
 }
 
-Button {
+/* Button {
     font-size: 12px;
     padding: 4px;
     border-radius: 8px;
     background-color: red;
     color: white;
     font-weight: bold;
-}
+} */
 
 .promptInput {
     display: flex;
@@ -38,6 +47,7 @@ Button {
 
 input {
     width: 40%;
+    height: 25px !important;
 }
 
 .image {
@@ -71,3 +81,52 @@ input {
 .image__placeholder p {
     margin: 25px auto;
 }
+
+.AIButton {
+    appearance: none;
+    background-color: #2ea44f;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  
+  .AIButton:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+  }
+  
+  .AIButton:hover {
+    background-color: #2c974b;
+  }
+  
+  .AIButton:focus {
+    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+    outline: none;
+  }
+  
+  .AIButton:disabled {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+  }
+  
+  .AIButton:active {
+    background-color: #298e46;
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+  }

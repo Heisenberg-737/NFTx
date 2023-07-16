@@ -144,9 +144,9 @@ function NFTDetails() {
   }
 
   return (
-    <div>
+    <div className="detailPage">
       <NavBar wallet={walletAddress} />
-      <h1 className="Heading">Few More Questions</h1>
+      <h1 className="Heading">Few More Questions 🤔</h1>
       <h3 className="HeadingText">
         Enter the details about your NFT's Name, Description and Chain.
       </h3>
@@ -173,6 +173,7 @@ function NFTDetails() {
         <div className="chainInput">
           <h5>You want to mint your NFT on</h5>
           <select onChange={handleChangeChain} value={chain}>
+          <option value="" selected disabled hidden>Choose here</option>
             <option value="goerli">Goerli Ethereum</option>
             <option value="mumbai">Polygon Mumbai</option>
             <option value="solana-testnet">Solana Testnet</option>
@@ -194,6 +195,7 @@ function NFTDetails() {
         <button className="submitNFT" onClick={submitNFT}>
           Submit NFT
         </button>
+        <h6 className="warnText">Note: Please wait for few seconds after clicking Submit button to mint your NFT!</h6>
       </div>
     </div>
   );

@@ -1,3 +1,12 @@
+.successPage {
+    background-color: #fffead;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .Heading {
     font-size: 36px;
     text-align: center;
@@ -6,7 +15,7 @@
 }
 
 .HeadingText {
-    font-size: 24px;
+    font-size: 20px !important;
     text-align: center;
     margin-top: 2%;
     margin-bottom: 2%;

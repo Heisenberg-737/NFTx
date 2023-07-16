@@ -90,10 +90,10 @@ function MintFromAI() {
   };
 
   return (
-    <div>
+    <div className="mintAIPage">
       <NavBar wallet={walletAddress} />
-      <h1 className="Heading">Mint an NFT using Generative AI</h1>
-      <h3 className="HeadingText">Enter Prompt to Generate Images.</h3>
+      <h1 className="Heading">Mint an NFT using Generative AI 😱</h1>
+      <h3 className="HeadingText">Enter Prompt to Generate Your Image</h3>
       <div className="image">
         {!isWaiting && image ? (
           <img src={image} alt="AI generated image" />
@@ -115,8 +115,8 @@ function MintFromAI() {
         />
       </div>
       <div className="optionButton">
-        <button onClick={generateImg}>Generate Image</button>
-        <button onClick={submitImgURL}>Submit Image</button>
+        <button className="AIButton" onClick={generateImg}>Generate Image</button>
+        <button className="AIButton" onClick={submitImgURL}>Submit Image</button>
       </div>
     </div>
   );

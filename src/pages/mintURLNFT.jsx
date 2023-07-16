@@ -32,9 +32,9 @@ function MintFromURL() {
 
   
   return (
-    <div>
+    <div className="mintURLPage">
       <NavBar wallet={walletAddress} />
-      <h1 className="Heading">Mint an NFT from URL</h1>
+      <h1 className="Heading">Mint an NFT from URL 😳</h1>
       <h3 className="HeadingText">
         Enter the URL of the image you want to mint as an NFT.
       </h3>
@@ -45,7 +45,7 @@ function MintFromURL() {
           placeholder="Enter URL here"
           value={url}
         />
-        <button onClick={submitImgURL}>Submit Image</button>
+        <button className="URLButton" onClick={submitImgURL}>Submit Image</button>
       </div>
     </div>
   );

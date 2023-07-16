@@ -17,7 +17,7 @@ function Success() {
   );
 
   return (
-    <div>
+    <div className="successPage">
       <NavBar wallet={walletAddress} />
       <h1 className="Heading">Your NFT Has Been Minted Successfully! 🎉</h1>
       <h3 className="HeadingText">
